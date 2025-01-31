@@ -5,12 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
     <!-- for icon -->
     <script src="https://kit.fontawesome.com/7db0f70e9b.js" crossorigin="anonymous"></script>
-    
+
+    <!-- for daisyUI & tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+.sora{
+  font-family: "Sora", serif;
+}
+.adlam{
+  font-family: "ADLaM Display", serif;
+}
+
+    </style>
 
 </head>
 <body>
     
+    <header class="sora text-[#111111] bg-[#FFF9F4] mb-7">
+        <nav class="md:flex md:max-w-screen-xl px-3 mx-auto justify-between items-center py-3">
+            <div class="flex items-center justify-between md:space-x-3">
+                <img src="images/logo-header.png" alt="">
+                <h4 class="md:text-2xl	md:text-[#111111] hidden md:block">Browse<span class="md:text-[#FFDC26]">4</span>Pets</h4>
+                <i class="fa-solid fa-bars md:hidden text-3xl"></i>
+            </div>
+            <div class="md:flex md:list-none md:text-xl space-x-8 hidden">
+                <li>Find a pet</li>
+                <li>Breeds</li>
+                <li>Contact us</li>
+            </div>
+            <div class="md:flex md:items-center md:space-x-3 hidden">
+                <i class="fa-regular fa-bell text-2xl"></i>
+                <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                <button class="btn btn-outline border-[#FFDC26] text-xl px-3 font-normal">Login</button>
+                <button class="btn bg-[#FFDC26] text-xl px-3 font-normal">Register</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="relative md:max-w-screen-xl mx-auto md:mb-64">
+            <div class="px-3 z-20">
+                <h3 class="adlam text-3xl md:text-5xl text-[#111111] mb-5">Pamper Your Pet,<br> Because They Deserve <br>the Bes</h3>
+                <p class="sora text-base text-[#4c4d50] md:text-lg mb-5">Discover a world of treats, toys, and <span class="md:hidden"><br></span>essentials handpicked for your furry <br> friends. Shop now and make tails wag with <span class="md:hidden"><br></span> joy!</p>
+                <button class="btn bg-[#FFDC26] text-xl px-6 font-normal">Find a pet</button>
+    
+            </div>
+            
+            <img class="absolute -mt-32 md:-mt-64 -z-10 md:px-5" src="images/cat-big.png" alt="">
+            
+        </div>
+
+        <div class="mt-40  px-5 md:max-w-screen-xl mx-auto md:relative md:top-64">
+            <h3 class="adlam text-2xl md:text-4xl md:mb-8">Browse By Categories</h3>
+            <div class="flex flex-wrap gap-5 md:gap-9">
+
+                <div class="w-44 h-60 bg-[#F9DF8A] rounded-xl flex justify-center items-center mt-3">
+                    <div>
+                        <img class="bg-white p-4 rounded-full" src="images/dog-cartoon.png" alt="">
+                    <h5 class="adlam text-xl flex justify-center items-center mt-3">Dog</h5>
+                        <p class="sora text-lg flex justify-center items-center mt-3">3 items</p>
+                    </div>
+                </div>
+
+                <div class="w-44 h-60 bg-[#F9DF8A] rounded-xl flex justify-center items-center mt-3">
+                    <div>
+                        <img class="bg-white p-4 rounded-full" src="images/fish-cartoon.png" alt="">
+                    <h5 class="adlam text-xl flex justify-center items-center mt-3">Fish</h5>
+                        <p class="sora text-lg flex justify-center items-center mt-3">3 items</p>
+                    </div>
+                </div>
+
+                <div class="w-44 h-60 bg-[#F9DF8A] rounded-xl flex justify-center items-center mt-3">
+                    <div>
+                        <img class="bg-white p-4 rounded-full" src="images/cat-cartoon.png" alt="">
+                    <h5 class="adlam text-xl flex justify-center items-center mt-3">Cat</h5>
+                        <p class="sora text-lg flex justify-center items-center mt-3">3 items</p>
+                    </div>
+                </div>
+
+                <div class="w-44 h-60 bg-[#F9DF8A] rounded-xl flex justify-center items-center mt-3">
+                    <div>
+                        <img class="bg-white p-4 rounded-full" src="images/bird-cartoon.png" alt="">
+                    <h5 class="adlam text-xl flex justify-center items-center mt-3">Bird</h5>
+                        <p class="sora text-lg flex justify-center items-center mt-3">3 items</p>
+                    </div>
+                </div>
+
+                <div class="w-44 h-60 bg-[#F9DF8A] rounded-xl flex justify-center items-center mt-3">
+                    <div>
+                        <img class="bg-white p-4 rounded-full" src="images/mouse-cartoon.png" alt="">
+                    <h5 class="adlam text-xl flex justify-center items-center mt-3">Pet</h5>
+                        <p class="sora text-lg flex justify-center items-center mt-3">3 items</p>
+                    </div>
+                </div>
+
+                <div class="w-44 h-60 bg-[#F9DF8A] rounded-xl flex justify-center items-center mt-3">
+                    <div>
+                        <img class="bg-white p-4 rounded-full" src="images/rabbit-cartoon.png" alt="">
+                    <h5 class="adlam text-xl flex justify-center items-center mt-3">Rabbit</h5>
+                        <p class="sora text-lg flex justify-center items-center mt-3">3 items</p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
 </body>
 </html>
