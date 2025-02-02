@@ -53,6 +53,37 @@
         </nav>
     </header>
 
+    <div class="flex items-center justify-center h-24 bg-gray-100">
+        <div class="relative w-full max-w-lg h-24 hover:bg-yellow-300 bg-yellow-400 flex items-center justify-center rounded-lg shadow-lg overflow-hidden">
+            <h1 class="text-white text-2xl font-bold z-10">Find the Best for Your Pet!</h1>
+            
+            
+            <div class="absolute bottom-0 left-1/4 w-6 h-6 bg-white opacity-20 rounded-full animate-paw"></div>
+            <div class="absolute bottom-0 left-1/2 w-6 h-6 bg-white opacity-20 rounded-full animate-paw delay-200"></div>
+            <div class="absolute bottom-0 right-1/4 w-6 h-6 bg-white opacity-20 rounded-full animate-paw delay-400"></div>
+        </div>
+        
+        <style>
+            @keyframes pawMove {
+                0% { transform: translateY(0); opacity: 0.2; }
+                50% { transform: translateY(-20px); opacity: 0.5; }
+                100% { transform: translateY(-40px); opacity: 0; }
+            }
+            .animate-paw {
+                animation: pawMove 2s infinite ease-in-out;
+            }
+            .delay-200 {
+                animation-delay: 0.2s;
+            }
+            .delay-400 {
+                animation-delay: 0.4s;
+            }
+        </style>
+    </div>
+
+
+
+
     <main>
 
         <div class="relative md:max-w-screen-xl  mx-auto md:mb-64">
